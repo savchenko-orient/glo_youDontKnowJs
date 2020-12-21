@@ -2,9 +2,11 @@
 
 const books = document.querySelectorAll('.book'),
     nameBooks = document.querySelectorAll('a'),
-    advertising = document.getElementsByClassName('adv'),
+    advertising = document.getElementsByClassName('adv')[0],
     chapterBook = document.querySelectorAll('li'),
     newChapter = document.createElement('li');
+
+
 
 
     
@@ -28,9 +30,9 @@ chapterBook[54].before(chapterBook[51]);
 newChapter.innerText = 'Глава 8: За пределами ES6';
 chapterBook[25].after(newChapter);
 
+advertising.parentNode.removeChild(advertising);
 
 
 
-// advertising.parentNode.removeChild(advertising);
 
 
